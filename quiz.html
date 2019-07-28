@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>quiz</title>
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+
+
+</head>
+
+<body>
+  <div id="wholesome">
+    <div class="grid">
+      <div id="quiz">
+        <h1>EVALUATION</h1>
+        <hr style="margin-bottom:20px">
+
+        <p id="question">When you arrived at a party before your friends, what did you do?</p>
+
+        <div>
+          <buttons class='option' onclick="processScent(0)">Started talking to new people</buttons>
+          <buttons class='option' onclick="processScent(1)">Turned around and waited in your car</buttons>
+          <buttons class='option' onclick="processScent(2)">Found a quiet place to sit and stay on your phone</buttons>
+          <buttons class='option' onclick="processScent(3)">Went to the kitchen to eat</buttons>
+        </div>
+        <br>
+        <button id='back' onclick="backQuestion()">Go back</button>
+        <button id='submit' onclick="submit()">Submit</button>
+        <hr style="margin-top:50px">
+        <footer>
+          <div id='progressBar'></div>
+          <p id="progress">questions 1 of 12.</p>
+        </footer>
+      </div>
+    </div>
+    <canvas class="myCanvas" width="400" height="400"
+      style="background-color:black;margin:0px; position: absolute;z-index: 0;" onmousemove="Comet();"></canvas>
+  </div>
+  <script src="fireBase.js"></script>
+  <script src="welcome.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

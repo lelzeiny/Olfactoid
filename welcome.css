@@ -1,0 +1,49 @@
+html, body {
+	height:100%;
+	width: 100%;
+	background-color: black;
+	display: inline-flex;
+	font-family:"Lucida Console";
+}
+
+#submitButton {
+	background-color: transparent;
+	cursor: pointer;
+	color: white;
+}
+
+#container{
+	margin-left: 43%;
+	position: absolute;
+	color: white;
+	text-align: center;
+	width: 185px;
+	font-family:"Lucida Console";
+	background-color: black;
+}
+
+input, select{
+	margin: 10px;
+	padding: 10px;
+	background-color: black;
+	color: white;
+	font-family:"Lucida Console";
+}
+
+select{
+	width: 155px;
+}
+
+.continue {
+	margin: 10px;
+	padding: 10px;
+	font-family:"Lucida Console";
+	color: white;
+	background-color: transparent;
+	color: whitesmoke;
+}
+
+.continue:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+	cursor: pointer;
+}

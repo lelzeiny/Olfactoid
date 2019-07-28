@@ -1,0 +1,50 @@
+body{
+	background-color: black;
+}
+#nav{
+	position: fixed;
+	background-color: black;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    width: 153px;
+    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+  	transition: width 1s;
+    display: inline;
+    border: 2px double whitesmoke;
+
+}
+
+i {
+	width: 50px;
+    height: 35px;
+    margin: 0;
+    padding: 12px;
+    text-align: center;
+	color: black;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+i:hover{
+	color: white;
+    background-color: black;
+}
+
+#user_list{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+.user_card{
+	width: 250px;
+	height: 130px;
+	margin: 20px;
+	padding: 10px 30px;
+	display: inline-block;
+	text-align: left;
+	background-color: whitesmoke;
+	border-radius: 15px;
+	cursor:pointer;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Olfactoid</title>
+	<link rel="stylesheet" href="welcome.css" type="text/css">
+	<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+
+</head>
+
+<body>
+	<canvas class="myCanvas" width="400" height="400" style="background-color:black;margin:0px"
+		onmousemove="Comet();"></canvas>
+	<div id="container">
+		<h1>Welcome</h1>
+		<hr>
+		<form>
+			<input type="text" id="user_nickname" placeholder="Nickname" required>
+			<input type="number" id="user_age" placeholder="Age" required>
+			<select name="gender" id="user_gender" required>
+				<option value="Prefer not to say">Prefer not to say</option>
+				<option value="Male">male</option>
+				<option value="Female">female</option>
+			</select> <br>
+			<input type="button" value="Submit" onclick="submitform()" id="submitButton">
+
+			<!-- <input type="submit" id="submitButton" onclick="submitform()"> -->
+			<!--
+			<input type="button" value="Submit" onclick="save_data()" id="submitButton">
+			
+			<input type="button" value="Submit" onclick="save_data();">
+			-->
+		</form>
+		<!--<button class="continue" onclick="window.location.href = 'index.html'">quiz</button>
+		-->
+	</div>
+	<script src="fireBase.js"></script>
+	<script src="welcome.js"></script>
+
+</body>
+
+</html>

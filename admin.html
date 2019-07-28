@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="admin.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+
+</head>
+<body onload="print_data();">
+	<div id="nav">
+		<i class="fa fa-home fa-2x" onclick="window.location.href('about.html')"></i>
+  		<i class="fa fa-user fa-2x" onclick="window.location.href('admin.html')"></i>
+	</div>
+	<br><br><br><br><br>
+	<div id="user_list">
+	</div>
+  	<script src="fireBase.js"></script>
+</body>
+</html>
