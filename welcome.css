@@ -17,7 +17,7 @@ html, body {
 	position: absolute;
 	color: white;
 	text-align: center;
-	width: 185px;
+	width: 200px;
 	font-family:"Lucida Console";
 	background-color: black;
 }
@@ -31,7 +31,7 @@ input, select{
 }
 
 select{
-	width: 155px;
+	width: 185px;
 }
 
 .continue {
