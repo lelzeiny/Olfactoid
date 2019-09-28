@@ -15,9 +15,9 @@ function Question(prompt, optionA, optionA_val, optionB, optionB_val, optionC, o
 var questionOne = new Question(
 	"When you arrived at a party before your friends, what did you do?",
 	"Started talking to new people", [0, 0, 0, 3],
-	"Turned around and waited in your car", [0, 2, 1, 0],
-	"Found a quiet place to sit and stay on your phone", [0, 1, 2, 0],
-	"Went to the kitchen to eat", [3, 0, 0, 0], false
+	"Turned around and waited in your car", [2, 1, 0, 0],
+	"Found a quiet place to sit and stay on your phone", [1, 2, 0, 0],
+	"Went to the kitchen to eat", [0, 0, 2, 1], false
 );
 var questionTwo = new Question(
 	"Which did you prefer?",
@@ -35,17 +35,17 @@ var questionThree = new Question(
 );
 var questionFour = new Question(
 	"When someone was mad at you and giving you the cold shoulder, you ... ",
-	"Tried to initiate a conversation to talk about your issues", [1, 0, 0, 2],
+	"Tried to initiate a conversation to talk about your issues", [0, 0, 0, 3],
 	"Ignored them and avoided it", [0, 1, 2, 0],
-	"Reciprocated the cold shoulder", [2, 0, 1, 0],
-	"Made small talk to ease into a conversation", [1, 2, 0, 0], false
+	"Reciprocated the cold shoulder", [2, 1, 0, 0],
+	"Made small talk to ease into a conversation", [0, 1, 2, 0], false
 );
 var questionFive = new Question(
 	"What did you typically do the night before an important exam?",
 	"You stayed up late to study", [0, 1, 2, 0],
-	"You had studied for a while, so you reviewed and then went to sleep on time", [0, 1, 0, 2],
+	"You had studied for a while, so you reviewed and then went to sleep on time", [0, 2, 1, 0],
 	"You had studied, but you would be worried and have difficulty falling asleep", [3, 0, 0, 0],
-	"You attempted to study but gotten distracted", [0, 2, 0, 1], false
+	"You attempted to study but got distracted", [0, 2, 0, 1], false
 );
 var questionSix = new Question(
 	"How did you make important decisions?",
@@ -56,17 +56,17 @@ var questionSix = new Question(
 );
 var questionSeven = new Question(
 	"When working in a team with a member not contributing, what did you do?",
-	"You confronted them and told them to do their part", [0, 0, 2, 1],
-	"You did their part for them", [0, 1, 0, 2],
+	"You confronted them and told them to do their part", [0, 0, 0, 3],
+	"You did their part for them", [0, 1, 2, 0],
 	"You told a superior", [1, 2, 0, 0],
-	"You refused to put their name on the project", [2, 0, 1, 0], false
+	"You refused to put their name on the project", [3, 0, 0, 0], false
 );
 var questionEight = new Question(
 	"What do you remember noticing first about people you met?",
-	"Eyes", [0, 0, 0, 3],
-	"Hair", [3, 0, 0, 0],
-	"Hands", [0, 1, 2, 0],
-	"Smile", [0, 2, 1, 0], false
+	"Eyes", [0, 0, 1, 2],
+	"Hair", [2, 0, 0, 1],
+	"Hands", [0, 0, 3, 0],
+	"Smile", [0, 3, 0, 0], false
 );
 var questionNine = new Question(
 	"Which of the following is a disagreeable trait that you had?",
@@ -79,7 +79,7 @@ var questionTen = new Question(
 	"How would your friends have described you?",
 	"Social, open to trying new things", [0, 0, 0, 4],
 	"Compassionate", [4, 0, 0, 0],
-	"Calm, rational", [0, 1, 3, 0],
+	"Calm, rational", [0, 0, 4, 0],
 	"Quiet, thoughtful", [0, 3, 1, 0], false
 );
 //document.getElementById("option").style.backgroundColor = Transparent;
@@ -93,9 +93,9 @@ var questionEleven = new Question(
 var questionTwelve = new Question(
 	"Which of these shapes do you like the most?",
 	'<img src="Others/square.png" class="optionImg">', [0, 2, 1, 0],
-	'<img src="Others/circle.png" class="optionImg">', [2, 1, 0, 0],
-	'<img src="Others/triangle.png" class="optionImg">', [0, 0, 2, 1],
-	'<img src="Others/rectangle.png" class="optionImg">', [1, 0, 0, 2], true
+	'<img src="Others/circle.png" class="optionImg">', [0, 0, 0, 3],
+	'<img src="Others/triangle.png" class="optionImg">', [3, 0, 0, 0],
+	'<img src="Others/rectangle.png" class="optionImg">', [1, 0, 2, 0], true
 );
 
 var questionArray = [questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix, questionSeven,

@@ -64,7 +64,7 @@ function print_data() {
       var holderName = childData.user_first;
       if (holderName == undefined) {
         holderName = childData.user_nickname;
-        if (holderName == undefined){
+        if (holderName == undefined) {
           holderName = "John";
         }
       }
@@ -75,7 +75,7 @@ function print_data() {
       holderName = childData.user_last;
       if (holderName == undefined) {
         holderName = childData.user_number;
-        if (holderName == undefined){
+        if (holderName == undefined) {
           holderName = "Doe";
         }
       }
