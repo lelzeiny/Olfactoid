@@ -51,7 +51,9 @@ function print_data() {
   var container = document.getElementById("user_list");
 
   databaseRef.once('value', function (snapshot) {
-    snapshot.forEach(function (childSnapshot) {
+    const reverseSnapshot = [];
+    snapshot.forEach(function (el) { reverseSnapshot.push(el); });
+    reverseSnapshot.reverse().forEach(function (childSnapshot) {
       var childKey = childSnapshot.key;
       var childData = childSnapshot.val();
 
